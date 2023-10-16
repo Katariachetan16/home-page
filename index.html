@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      padding: 20px;
+      transition: all 0.4s ease;
+    }
+    nav.sticky{
+      padding: 15px 20px;
+      background: #40f4ee;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav .nav-content{
+      height: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo a{
+      font-weight: 500;
+      font-size: 35px;
+      color: #40f4e5;
+    }
+    nav.sticky .logo a{
+      color: #fff;
+    }
+    .nav-content .nav-links{
+      display: flex;
+    }
+    .nav-content .nav-links li{
+      list-style: none;
+      margin: 0 8px;
+    }
+     .nav-links li a{
+      text-decoration: none;
+      color: #7bddc8;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 4px;
+      transition: all 0.3s ease;
+    }
+     .nav-links li a:hover{
+       color: #df40f4;
+     }
+     nav.sticky .nav-links li a{
+       color: #fff;
+       transition: all 0.4s ease;
+    }
+     nav.sticky .nav-links li a:hover{
+      color: #0E2431;
+    }
+    .home{
+      height: 100vh;
+      width: 100%;
+      background: url("chetan1.jpg") no-repeat;
+      background-size: cover;
+      background-position: top;
+      background-attachment: fixed;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    h2{
+      font-size: 30px;
+      margin-bottom: 6px;
+      color: #40f4eb;
+    }
+    .text{
+      text-align: justify;
+      padding: 40px 80px;
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      width: 100%;
+      display: inline-block;
+      background: #ccc;
+      height: 60vh;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    
+    .footer-distributed {
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: normal 16px sans-serif;
+      padding: 45px 50px;
+    }
+    
+    .footer-distributed .footer-left p {
+      color: #8f9296;
+      font-size: 14px;
+      margin: 0;
+    }
+    /* Footer links */
+    
+    .footer-distributed p.footer-links {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0 0 10px;
+      padding: 0;
+      transition: ease .25s;
+    }
+    
+    .footer-distributed p.footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+      transition: ease .25s;
+    }
+    
+    .footer-distributed .footer-links a:before {
+      content: "·";
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    
+    .footer-distributed .footer-links .link-1:before {
+      content: none;
+    }
+    
+    .footer-distributed .footer-right {
+      float: right;
+      margin-top: 6px;
+      max-width: 180px;
+    }
+    
+    .footer-distributed .footer-right a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-left: 3px;
+      transition:all .25s;
+    }
+    
+    .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+    
+    .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+    
+    /* Media Queries */
+    
+    @media (max-width: 600px) {
+      .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+      }
+      .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+      }
+      .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+      }
+    }</style> 
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">CHETAN KATARIA</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://katariachetan16.github.io/about-me/">About</a></li>
+        <li><a href="https://katariachetan16.github.io/contact-me/">Contact</a></li>
+        <li><a href="https://katariachetan16.github.io/portfolio-page/">Portfolio</a></li>
+        
+           </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>About Chetan</h2>
+    <p>Chetan, a fresher of BCA, is excited to embark on an HTML project. With a solid educational background, Chetan is well-prepared to delve into the world of web development. Eager to apply their knowledge in a practical setting, Sunny is ready to create a captivating web page using HTML. Armed with a deep understanding of HTML tags, attributes, and the structure of a webpage, Chetan is poised to design a project that reflects their creativity and coding skills. From building the fundamental structure of the webpage with headers, paragraphs, and lists to incorporating images and hyperlinks, chetan is enthusiastic about transforming their academic achievements into a real-world application. This HTML project is just the beginning of Chetan's journey into the exciting world of web development.</p>
+    <br><p>Chetan, a first-year BCA student, is eager to embark on a web designing project. With a fresh perspective and a passion for technology, Chetan is well-prepared to dive into the world of web design. Equipped with the foundational knowledge gained during the initial year of their Bachelor's in Computer Applications program, Chetan is ready to put their skills to the test and create a visually appealing and functional website. Chetan understands the importance of user experience, responsive design, and the use of various web development tools and languages. This web designing project is an exciting opportunity for chetan to blend their academic learning with practical application, setting the stage for a promising career in the dynamic field of web design.</p>
+  </div>
+  <script>
+    let nav = document.querySelector("nav");
+      window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20){
+          nav.classList.add("sticky");
+        }else {
+          nav.classList.remove("sticky");
+        }
+      }
+    </script>
+    
+
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					
+
+					<a href="https://katariachetan16.github.io/portfolio-page/">Portfolio</a>
+
+					<a href="https://katariachetan16.github.io/about-me/">About</a>
+
+					
+					<a href="https://katariachetan16.github.io/contact-me/">Contact</a>
+				</p>
+
+				<p>chetan kataria &copy; 2004</p>
+			</div>
+
+		</footer>
+  
+
+</body>
+</html>
